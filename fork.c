@@ -9,7 +9,8 @@ void* increase(){
 }
 
 int main(int argc, char *argv[]){
-    int n = atoi(argv[1]);
+    pid_t pid = fork();
+    
 
     printf("%d", count);
     return 0;
