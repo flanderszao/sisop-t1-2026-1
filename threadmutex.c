@@ -1,16 +1,25 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <pthread.h>
+#include <time.h>
+
+pthread_mutex_t m;
 int count = 0;
+FILE *fptr;
 
 void* increase(){
     while(count<1000000000){
+        pthread_mutex_lock(&m);
         count++;
+        pthread_mutex_unlock(&m);
     }
+
+    return NULL;
 }
 
 int main(int argc, char *argv[]){
     int n = atoi(argv[1]);
+    clock_t inicio = clock();
 
     pthread_t thread[n];
     for (int i=0; i<n; i++){
@@ -21,6 +30,17 @@ int main(int argc, char *argv[]){
         pthread_join(thread[i], NULL);
     }
 
-    printf("%d", count);
+    clock_t fim = clock();
+    double tempo = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
+
+    printf("%d\n", count);
+    printf("Tempo: %.6f s\n", tempo);
+
+    fptr = fopen("threadmutex.txt", "a");
+
+    fprintf(fptr, "\nEm %d Threads: %d | Tempo: %.6f s", n, count, tempo);
+
+    fclose(fptr);
+
     return 0;
 }

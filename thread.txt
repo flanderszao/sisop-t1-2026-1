@@ -1,0 +1,96 @@
+TESTADO EM UM CODESPACE
+
+lscpu
+Architecture:             x86_64
+  CPU op-mode(s):         32-bit, 64-bit
+  Address sizes:          48 bits physical, 48 bits virtual
+  Byte Order:             Little Endian
+CPU(s):                   2
+  On-line CPU(s) list:    0,1
+Vendor ID:                AuthenticAMD
+  Model name:             AMD EPYC 9V74 80-Core Processor
+    CPU family:           25
+    Model:                17
+    Thread(s) per core:   2
+    Core(s) per socket:   1
+    Socket(s):            1
+    Stepping:             1
+    BogoMIPS:             5192.27
+    Flags:                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge m
+                          ca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall
+                           nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep
+                          _good nopl tsc_reliable nonstop_tsc cpuid extd_apicid 
+                          aperfmperf tsc_known_freq pni pclmulqdq ssse3 fma cx16
+                           pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rd
+                          rand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm 
+                          sse4a misalignsse 3dnowprefetch osvw topoext vmmcall f
+                          sgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx sm
+                          ap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsav
+                          es user_shstk clzero xsaveerptr rdpru arat npt nrip_sa
+                          ve tsc_scale vmcb_clean flushbyasid decodeassists paus
+                          efilter pfthreshold v_vmsave_vmload umip vaes vpclmulq
+                          dq rdpid fsrm
+Virtualization features:  
+  Virtualization:         AMD-V
+  Hypervisor vendor:      Microsoft
+  Virtualization type:    full
+Caches (sum of all):      
+  L1d:                    32 KiB (1 instance)
+  L1i:                    32 KiB (1 instance)
+  L2:                     1 MiB (1 instance)
+  L3:                     32 MiB (1 instance)
+NUMA:                     
+  NUMA node(s):           1
+  NUMA node0 CPU(s):      0,1
+Vulnerabilities:          
+  Gather data sampling:   Not affected
+  Itlb multihit:          Not affected
+  L1tf:                   Not affected
+  Mds:                    Not affected
+  Meltdown:               Not affected
+  Mmio stale data:        Not affected
+  Reg file data sampling: Not affected
+  Retbleed:               Not affected
+  Spec rstack overflow:   Vulnerable: Safe RET, no microcode
+  Spec store bypass:      Vulnerable
+  Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointe
+                          r sanitization
+  Spectre v2:             Mitigation; Retpolines; STIBP disabled; RSB filling; P
+                          BRSB-eIBRS Not affected; BHI Not affected
+  Srbds:                  Not affected
+  Tsx async abort:        Not affected
+  Vmscape:                Not affected
+
+TESTES:
+Em 2 Threads: 1000000000 | Tempo: 2.934928 s
+Em 2 Threads: 1000000001 | Tempo: 2.047243 s
+Em 2 Threads: 1000000000 | Tempo: 2.641979 s
+Em 2 Threads: 1000000000 | Tempo: 1.925695 s
+Em 2 Threads: 1000000000 | Tempo: 3.397652 s
+Em 2 Threads: 1000000001 | Tempo: 2.942431 s
+Em 2 Threads: 1000000001 | Tempo: 2.166154 s
+Em 2 Threads: 1000000000 | Tempo: 2.779980 s
+Em 2 Threads: 1000000000 | Tempo: 3.178156 s
+Em 2 Threads: 1000000001 | Tempo: 2.804834 s
+
+Em 4 Threads: 1000000002 | Tempo: 3.330000 s
+Em 4 Threads: 1000000002 | Tempo: 3.584921 s
+Em 4 Threads: 1000000000 | Tempo: 4.251320 s
+Em 4 Threads: 1000000001 | Tempo: 4.044682 s
+Em 4 Threads: 1000000000 | Tempo: 3.098931 s
+Em 4 Threads: 1000000000 | Tempo: 3.749413 s
+Em 4 Threads: 1000000002 | Tempo: 4.019975 s
+Em 4 Threads: 1000000001 | Tempo: 3.162436 s
+Em 4 Threads: 1000000001 | Tempo: 3.644150 s
+Em 4 Threads: 1000000000 | Tempo: 3.007577 s
+
+Em 8 Threads: 1000000000 | Tempo: 5.557000 s
+Em 8 Threads: 1000000002 | Tempo: 5.619787 s
+Em 8 Threads: 1000000000 | Tempo: 6.369458 s
+Em 8 Threads: 1000000000 | Tempo: 6.834843 s
+Em 8 Threads: 1000000000 | Tempo: 5.275028 s
+Em 8 Threads: 1000000001 | Tempo: 5.255155 s
+Em 8 Threads: 1000000005 | Tempo: 5.725880 s
+Em 8 Threads: 1000000001 | Tempo: 6.281415 s
+Em 8 Threads: 1000000003 | Tempo: 5.768677 s
+Em 8 Threads: 1000000000 | Tempo: 5.760309 s
