@@ -29,13 +29,12 @@ int main(int argc, char *argv[]){
             }
             //printf("Child %d created (PID: %d)\n", i + 1, getpid());
             return 0;
-        } else {
-            while (count < 1000000000){
-            read(fd[0], &buf, sizeof(buf));
-            count = count + buf;
-            }
-            // Parent process
         }
+    }
+
+    while (count < 1000000000){
+        read(fd[0], &buf, sizeof(buf));
+        count = count + buf;
     }
 
     clock_t fim = clock();
