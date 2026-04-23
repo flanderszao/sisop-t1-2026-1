@@ -1,0 +1,90 @@
+Arquitetura:                  x86_64
+  Modo(s) operacional da CPU: 32-bit, 64-bit
+  Tamanhos de endereço:       36 bits physical, 48 bits virtual
+  Ordem dos bytes:            Little Endian
+CPU(s):                       4
+  Lista de CPU(s) on-line:    0-3
+ID de fornecedor:             GenuineIntel
+  Nome do modelo:             Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+    Família da CPU:           6
+    Modelo:                   42
+    Thread(s) per núcleo:     1
+    Núcleo(s) por soquete:    4
+    Soquete(s):               1
+    Step:                     7
+    CPU(s) scaling MHz:       50%
+    CPU MHz máx.:             3400,0000
+    CPU MHz mín.:             1600,0000
+    BogoMIPS:                 6186,16
+    Opções:                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pa
+                              t pse36 clflush dts acpi mmx fxsr sse sse2 ht tm pbe syscall nx 
+                              rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopo
+                              logy nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor d
+                              s_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2
+                              apic popcnt tsc_deadline_timer aes xsave avx lahf_lm epb pti ssb
+                              d ibrs ibpb stibp tpr_shadow flexpriority ept vpid xsaveopt dthe
+                              rm ida arat pln pts vnmi md_clear flush_l1d
+Recursos de virtualização:    
+  Virtualização:              VT-x
+Caches (soma de todos):       
+  L1d:                        128 KiB (4 instâncias)
+  L1i:                        128 KiB (4 instâncias)
+  L2:                         1 MiB (4 instâncias)
+  L3:                         6 MiB (1 instância)
+NUMA:                         
+  Nó(s) de NUMA:              1
+  CPU(s) de nó0 NUMA:         0-3
+Vulnerabilidades:             
+  Gather data sampling:       Not affected
+  Indirect target selection:  Not affected
+  Itlb multihit:              KVM: Mitigation: Split huge pages
+  L1tf:                       Mitigation; PTE Inversion; VMX conditional cache flushes, SMT di
+                              sabled
+  Mds:                        Mitigation; Clear CPU buffers; SMT disabled
+  Meltdown:                   Mitigation; PTI
+  Mmio stale data:            Unknown: No mitigations
+  Reg file data sampling:     Not affected
+  Retbleed:                   Not affected
+  Spec rstack overflow:       Not affected
+  Spec store bypass:          Mitigation; Speculative Store Bypass disabled via prctl
+  Spectre v1:                 Mitigation; usercopy/swapgs barriers and __user pointer sanitiza
+                              tion
+  Spectre v2:                 Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP disable
+                              d; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+  Srbds:                      Not affected
+  Tsa:                        Not affected
+  Tsx async abort:            Not affected
+  Vmscape:                    Mitigation; IBPB before exit to userspace
+TESTES:
+Em 2 Threads: 1000000000 | Tempo: 4.483497 s
+Em 2 Threads: 1000000000 | Tempo: 4.599519 s
+Em 2 Threads: 1000000000 | Tempo: 4.478037 s
+Em 2 Threads: 1000000000 | Tempo: 4.580489 s
+Em 2 Threads: 1000000000 | Tempo: 4.446432 s
+Em 2 Threads: 1000000000 | Tempo: 4.571506 s
+Em 2 Threads: 1000000000 | Tempo: 4.584579 s
+Em 2 Threads: 1000000000 | Tempo: 4.494203 s
+Em 2 Threads: 1000000000 | Tempo: 4.518008 s
+Em 2 Threads: 1000000000 | Tempo: 4.465722 s
+
+Em 4 Threads: 1000000000 | Tempo: 8.633739 s
+Em 4 Threads: 1000000000 | Tempo: 9.253113 s
+Em 4 Threads: 1000000002 | Tempo: 8.533742 s
+Em 4 Threads: 1000000001 | Tempo: 9.382796 s
+Em 4 Threads: 1000000000 | Tempo: 9.154867 s
+Em 4 Threads: 1000000000 | Tempo: 9.547624 s
+Em 4 Threads: 1000000000 | Tempo: 9.189945 s
+Em 4 Threads: 1000000000 | Tempo: 9.622665 s
+Em 4 Threads: 1000000000 | Tempo: 9.457009 s
+Em 4 Threads: 1000000000 | Tempo: 9.478295 s
+
+Em 8 Threads: 1000000000 | Tempo: 11.280123 s
+Em 8 Threads: 1000000003 | Tempo: 12.402707 s
+Em 8 Threads: 1000000002 | Tempo: 12.229313 s
+Em 8 Threads: 1000000001 | Tempo: 11.600324 s
+Em 8 Threads: 1000000003 | Tempo: 11.367827 s
+Em 8 Threads: 1000000002 | Tempo: 10.561478 s
+Em 8 Threads: 1000000005 | Tempo: 11.882361 s
+Em 8 Threads: 1000000003 | Tempo: 12.119791 s
+Em 8 Threads: 1000000004 | Tempo: 10.180364 s
+Em 8 Threads: 1000000000 | Tempo: 11.742654 s

@@ -1,0 +1,12 @@
+
+Em 2 Threads: 1000000000 | Tempo: 131.204848 s
+Em 2 Threads: 1000000000 | Tempo: 124.537665 s
+Em 2 Threads: 1000000000 | Tempo: 133.965782 s
+Em 2 Threads: 1000000001 | Tempo: 133.753578 s
+Em 2 Threads: 1000000001 | Tempo: 116.579982 s
+Em 2 Threads: 1000000000 | Tempo: 124.046858 s
+Em 2 Threads: 1000000001 | Tempo: 128.008182 s
+Em 2 Threads: 1000000000 | Tempo: 123.925706 s
+Em 2 Threads: 1000000000 | Tempo: 128.392352 s
+Em 2 Threads: 1000000001 | Tempo: 123.566774 s
+Em 4 Threads: 1000000002 | Tempo: 198.994681 s
