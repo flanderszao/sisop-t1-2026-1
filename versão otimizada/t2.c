@@ -3,12 +3,21 @@
 #include <pthread.h>
 #include <sys/time.h>
 
+pthread_mutex_t m;
 int count = 0;
 FILE *fptr;
 
 void* increase(){
-    while(count<1000000000){
+    while(1){
+        pthread_mutex_lock(&m);
+
+        if (count >= 1000000000){
+            pthread_mutex_unlock(&m);
+            break;
+        }
+
         count++;
+        pthread_mutex_unlock(&m);
     }
 
     return NULL;
@@ -16,6 +25,8 @@ void* increase(){
 
 int main(int argc, char *argv[]){
     int n = atoi(argv[1]);
+    pthread_mutex_init(&m, NULL);
+
     struct timeval inicio, fim;
     gettimeofday(&inicio, NULL);
 
@@ -35,11 +46,12 @@ int main(int argc, char *argv[]){
     printf("%d\n", count);
     printf("Tempo: %.6f s\n", tempo);
 
-    fptr = fopen("thread.txt", "a");
+    fptr = fopen("threadmutex.txt", "a");
 
     fprintf(fptr, "\nEm %d Threads: %d | Tempo: %.6f s", n, count, tempo);
 
     fclose(fptr);
+    pthread_mutex_destroy(&m);
 
     return 0;
 }
