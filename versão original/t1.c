@@ -7,12 +7,7 @@ int count = 0;
 FILE *fptr;
 
 void* increase(){
-    while(1){
-
-        if (count >= 1000000000){
-            break;
-        }
-
+    while(count<1000000000){
         count++;
     }
 

@@ -1,10 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <sys/ipc.h>
+#include <sys/shm.h>
 #include <sys/wait.h>
-#include <time.h>
+#include <sys/time.h>
 
-int count = 0;
 FILE *fptr;
 
 int main(int argc, char *argv[]){
@@ -14,38 +15,71 @@ int main(int argc, char *argv[]){
     }
 
     int n = atoi(argv[1]);
-    clock_t inicio = clock();
-    int buf, one = 1, fd[2];
-    pipe(fd);
+    struct timeval inicio, fim;
+    gettimeofday(&inicio, NULL);
+
+    int shmid = shmget(IPC_PRIVATE, sizeof(int), IPC_CREAT | 0600);
+    if (shmid == -1) {
+        perror("shmget");
+        return 1;
+    }
+
+    int *count = (int *) shmat(shmid, NULL, 0);
+    if (count == (void *) -1) {
+        perror("shmat");
+        shmctl(shmid, IPC_RMID, NULL);
+        return 1;
+    }
+
+    *count = 0;
 
     for (int i = 0; i < n; i++) {
         pid_t pid = fork();
+        if (pid < 0) {
+            perror("fork");
+            shmctl(shmid, IPC_RMID, NULL);
+            return 1;
+        }
+
         if (pid == 0) {
             //ADICIONAR LÓGICA
-            read(fd[0], &buf, sizeof(buf));
-            count = buf;
-            while (count < 1000000000){
-                write(fd[1], &one, sizeof(one));
-            }
-            //printf("Child %d created (PID: %d)\n", i + 1, getpid());
-            return 0;
-        } else {
-            while (count < 1000000000){
-            read(fd[0], &buf, sizeof(buf));
-            count = count + buf;
-            }
-            // Parent process
-        }
+            while (*count < 1000000000) {
+                (*count)++;   /* P1: sem sincronização */
+                }
+
+            shmdt(count);     /* filho desanexa */
+            _exit(0);
+        } 
     }
 
-    clock_t fim = clock();
-    double tempo = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
+    for (int i = 0; i < n; i++) {
+        int status;
+        wait(&status);
+    }
 
-    printf("Tempo: %.6f s\n", tempo);
+    int final_count = *count;
+
+    if (shmdt(count) == -1) {
+        perror("shmdt");
+    }
+
+    if (shmctl(shmid, IPC_RMID, NULL) == -1) {
+        perror("shmctl IPC_RMID");
+    }
+
+    gettimeofday(&fim, NULL);
+    double tempo = (fim.tv_sec - inicio.tv_sec)
+                 + (fim.tv_usec - inicio.tv_usec) / 1e6;
+
+    printf("\nEm %d Forks: %d | Tempo: %.6f s\n", n, final_count, tempo);
 
     fptr = fopen("fork.txt", "a");
+    if (fptr == NULL) {
+        perror("fopen");
+        return 1;
+    }
 
-    fprintf(fptr, "\nEm %d Forks: %d | Tempo: %.6f s", n, count, tempo);
+    fprintf(fptr, "\nEm %d Forks: %d | Tempo: %.6f s", n, final_count, tempo);
 
     fclose(fptr);
 

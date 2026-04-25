@@ -62,35 +62,35 @@ Vulnerabilities:
   Vmscape:                Not affected
 
 TESTES:
-Em 2 Threads: 1000000000 | Tempo: 0.001280 s
-Em 2 Threads: 1000000000 | Tempo: 0.000485 s
-Em 2 Threads: 1000000000 | Tempo: 0.000189 s
-Em 2 Threads: 1000000000 | Tempo: 0.000399 s
-Em 2 Threads: 1000000000 | Tempo: 0.000314 s
-Em 2 Threads: 1000000000 | Tempo: 0.000339 s
-Em 2 Threads: 1000000000 | Tempo: 0.000180 s
-Em 2 Threads: 1000000000 | Tempo: 0.000279 s
-Em 2 Threads: 1000000000 | Tempo: 0.000270 s
-Em 2 Threads: 1000000000 | Tempo: 0.000825 s
+Em 2 Threads: 1000000000 | Tempo: 2.934928 s
+Em 2 Threads: 1000000001 | Tempo: 2.047243 s
+Em 2 Threads: 1000000000 | Tempo: 2.641979 s
+Em 2 Threads: 1000000000 | Tempo: 1.925695 s
+Em 2 Threads: 1000000000 | Tempo: 3.397652 s
+Em 2 Threads: 1000000001 | Tempo: 2.942431 s
+Em 2 Threads: 1000000001 | Tempo: 2.166154 s
+Em 2 Threads: 1000000000 | Tempo: 2.779980 s
+Em 2 Threads: 1000000000 | Tempo: 3.178156 s
+Em 2 Threads: 1000000001 | Tempo: 2.804834 s
 
-Em 4 Threads: 1000000000 | Tempo: 0.000348 s
-Em 4 Threads: 1000000000 | Tempo: 0.000903 s
-Em 4 Threads: 1000000000 | Tempo: 0.000721 s
-Em 4 Threads: 1000000000 | Tempo: 0.000273 s
-Em 4 Threads: 1000000000 | Tempo: 0.000667 s
-Em 4 Threads: 1000000000 | Tempo: 0.000329 s
-Em 4 Threads: 1000000000 | Tempo: 0.000332 s
-Em 4 Threads: 1000000000 | Tempo: 0.001137 s
-Em 4 Threads: 1000000000 | Tempo: 0.000587 s
-Em 4 Threads: 1000000000 | Tempo: 0.000534 s
+Em 4 Threads: 1000000002 | Tempo: 3.330000 s
+Em 4 Threads: 1000000002 | Tempo: 3.584921 s
+Em 4 Threads: 1000000000 | Tempo: 4.251320 s
+Em 4 Threads: 1000000001 | Tempo: 4.044682 s
+Em 4 Threads: 1000000000 | Tempo: 3.098931 s
+Em 4 Threads: 1000000000 | Tempo: 3.749413 s
+Em 4 Threads: 1000000002 | Tempo: 4.019975 s
+Em 4 Threads: 1000000001 | Tempo: 3.162436 s
+Em 4 Threads: 1000000001 | Tempo: 3.644150 s
+Em 4 Threads: 1000000000 | Tempo: 3.007577 s
 
-Em 8 Threads: 1000000000 | Tempo: 0.000711 s
-Em 8 Threads: 1000000000 | Tempo: 0.000611 s
-Em 8 Threads: 1000000000 | Tempo: 0.001147 s
-Em 8 Threads: 1000000000 | Tempo: 0.001604 s
-Em 8 Threads: 1000000000 | Tempo: 0.000799 s
-Em 8 Threads: 1000000000 | Tempo: 0.001150 s
-Em 8 Threads: 1000000000 | Tempo: 0.001014 s
-Em 8 Threads: 1000000000 | Tempo: 0.000919 s
-Em 8 Threads: 1000000000 | Tempo: 0.000813 s
-Em 8 Threads: 1000000000 | Tempo: 0.002732 s
+Em 8 Threads: 1000000000 | Tempo: 5.557000 s
+Em 8 Threads: 1000000002 | Tempo: 5.619787 s
+Em 8 Threads: 1000000000 | Tempo: 6.369458 s
+Em 8 Threads: 1000000000 | Tempo: 6.834843 s
+Em 8 Threads: 1000000000 | Tempo: 5.275028 s
+Em 8 Threads: 1000000001 | Tempo: 5.255155 s
+Em 8 Threads: 1000000005 | Tempo: 5.725880 s
+Em 8 Threads: 1000000001 | Tempo: 6.281415 s
+Em 8 Threads: 1000000003 | Tempo: 5.768677 s
+Em 8 Threads: 1000000000 | Tempo: 5.760309 s

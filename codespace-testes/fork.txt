@@ -62,35 +62,35 @@ Vulnerabilities:
   Vmscape:                Not affected
 
 TESTES:
-Em 2 Threads: 1000000000 | Tempo: 0.001280 s
-Em 2 Threads: 1000000000 | Tempo: 0.000485 s
-Em 2 Threads: 1000000000 | Tempo: 0.000189 s
-Em 2 Threads: 1000000000 | Tempo: 0.000399 s
-Em 2 Threads: 1000000000 | Tempo: 0.000314 s
-Em 2 Threads: 1000000000 | Tempo: 0.000339 s
-Em 2 Threads: 1000000000 | Tempo: 0.000180 s
-Em 2 Threads: 1000000000 | Tempo: 0.000279 s
-Em 2 Threads: 1000000000 | Tempo: 0.000270 s
-Em 2 Threads: 1000000000 | Tempo: 0.000825 s
+Em 2 Forks: 1000000000 | Tempo: 3.156418 s
+Em 2 Forks: 1000000000 | Tempo: 4.069543 s
+Em 2 Forks: 1000000000 | Tempo: 4.069571 s
+Em 2 Forks: 1000000000 | Tempo: 4.351848 s
+Em 2 Forks: 1000000000 | Tempo: 3.703607 s
+Em 2 Forks: 1000000000 | Tempo: 4.441180 s
+Em 2 Forks: 1000000000 | Tempo: 3.949579 s
+Em 2 Forks: 1000000001 | Tempo: 3.754445 s
+Em 2 Forks: 1000000000 | Tempo: 3.854438 s
+Em 2 Forks: 1000000000 | Tempo: 3.975250 s
 
-Em 4 Threads: 1000000000 | Tempo: 0.000348 s
-Em 4 Threads: 1000000000 | Tempo: 0.000903 s
-Em 4 Threads: 1000000000 | Tempo: 0.000721 s
-Em 4 Threads: 1000000000 | Tempo: 0.000273 s
-Em 4 Threads: 1000000000 | Tempo: 0.000667 s
-Em 4 Threads: 1000000000 | Tempo: 0.000329 s
-Em 4 Threads: 1000000000 | Tempo: 0.000332 s
-Em 4 Threads: 1000000000 | Tempo: 0.001137 s
-Em 4 Threads: 1000000000 | Tempo: 0.000587 s
-Em 4 Threads: 1000000000 | Tempo: 0.000534 s
+Em 4 Forks: 1000000002 | Tempo: 5.075878 s
+Em 4 Forks: 1000000001 | Tempo: 5.927388 s
+Em 4 Forks: 1000000000 | Tempo: 5.120132 s
+Em 4 Forks: 1000000002 | Tempo: 5.344195 s
+Em 4 Forks: 1000000002 | Tempo: 4.544543 s
+Em 4 Forks: 1000000001 | Tempo: 5.323574 s
+Em 4 Forks: 1000000003 | Tempo: 5.146634 s
+Em 4 Forks: 1000000002 | Tempo: 5.812928 s
+Em 4 Forks: 1000000002 | Tempo: 6.030995 s
+Em 4 Forks: 1000000000 | Tempo: 5.665768 s
 
-Em 8 Threads: 1000000000 | Tempo: 0.000711 s
-Em 8 Threads: 1000000000 | Tempo: 0.000611 s
-Em 8 Threads: 1000000000 | Tempo: 0.001147 s
-Em 8 Threads: 1000000000 | Tempo: 0.001604 s
-Em 8 Threads: 1000000000 | Tempo: 0.000799 s
-Em 8 Threads: 1000000000 | Tempo: 0.001150 s
-Em 8 Threads: 1000000000 | Tempo: 0.001014 s
-Em 8 Threads: 1000000000 | Tempo: 0.000919 s
-Em 8 Threads: 1000000000 | Tempo: 0.000813 s
-Em 8 Threads: 1000000000 | Tempo: 0.002732 s
+Em 8 Forks: 1000000006 | Tempo: 8.418304 s
+Em 8 Forks: 1000000005 | Tempo: 8.090271 s
+Em 8 Forks: 1000000003 | Tempo: 8.936845 s
+Em 8 Forks: 1000000004 | Tempo: 8.083793 s
+Em 8 Forks: 1000000006 | Tempo: 8.081495 s
+Em 8 Forks: 1000000002 | Tempo: 7.970995 s
+Em 8 Forks: 1000000005 | Tempo: 8.378764 s
+Em 8 Forks: 1000000004 | Tempo: 7.799162 s
+Em 8 Forks: 1000000006 | Tempo: 7.150329 s
+Em 8 Forks: 1000000000 | Tempo: 9.007637 s
