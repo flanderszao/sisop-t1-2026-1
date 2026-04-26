@@ -1,0 +1,80 @@
+Architecture:             x86_64
+  CPU op-mode(s):         32-bit, 64-bit
+  Address sizes:          39 bits physical, 48 bits virtual
+  Byte Order:             Little Endian
+CPU(s):                   4
+  On-line CPU(s) list:    0-3
+Vendor ID:                GenuineIntel
+  Model name:             Intel(R) Core(TM) i5-4570 CPU @ 3.20GHz
+    CPU family:           6
+    Model:                60
+    Thread(s) per core:   1
+    Core(s) per socket:   4
+    Socket(s):            1
+    Stepping:             3
+    BogoMIPS:             6385.22
+    Flags:                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse s
+                          se2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid
+                           tsc_known_freq pni pclmulqdq ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave av
+                          x f16c rdrand hypervisor lahf_lm abm pti ssbd ibrs ibpb stibp fsgsbase bmi1 avx2 smep bmi2 erm
+                          s invpcid xsaveopt md_clear flush_l1d arch_capabilities
+Virtualization features:
+  Hypervisor vendor:      Microsoft
+  Virtualization type:    full
+Caches (sum of all):
+  L1d:                    128 KiB (4 instances)
+  L1i:                    128 KiB (4 instances)
+  L2:                     1 MiB (4 instances)
+  L3:                     6 MiB (1 instance)
+NUMA:
+  NUMA node(s):           1
+  NUMA node0 CPU(s):      0-3
+Vulnerabilities:
+  Gather data sampling:   Not affected
+  Itlb multihit:          KVM: Mitigation: VMX unsupported
+  L1tf:                   Mitigation; PTE Inversion
+  Mds:                    Mitigation; Clear CPU buffers; SMT Host state unknown
+  Meltdown:               Mitigation; PTI
+  Mmio stale data:        Unknown: No mitigations
+  Reg file data sampling: Not affected
+  Retbleed:               Not affected
+  Spec rstack overflow:   Not affected
+  Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+  Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+  Spectre v2:             Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP disabled; RSB filling; PBRSB-eIBRS No
+                          t affected; BHI Retpoline
+  Srbds:                  Unknown: Dependent on hypervisor status
+  Tsx async abort:        Not affected
+TESTES:
+Em 2 Threads: 1000000000 | Tempo: 0.000301 s
+Em 2 Threads: 1000000000 | Tempo: 0.000296 s
+Em 2 Threads: 1000000000 | Tempo: 0.000241 s
+Em 2 Threads: 1000000000 | Tempo: 0.000923 s
+Em 2 Threads: 1000000000 | Tempo: 0.000280 s
+Em 2 Threads: 1000000000 | Tempo: 0.000228 s
+Em 2 Threads: 1000000000 | Tempo: 0.000283 s
+Em 2 Threads: 1000000000 | Tempo: 0.000439 s
+Em 2 Threads: 1000000000 | Tempo: 0.000262 s
+Em 2 Threads: 1000000000 | Tempo: 0.000222 s
+
+Em 4 Threads: 1000000000 | Tempo: 0.000358 s
+Em 4 Threads: 1000000000 | Tempo: 0.000331 s
+Em 4 Threads: 1000000000 | Tempo: 0.000357 s
+Em 4 Threads: 1000000000 | Tempo: 0.000373 s
+Em 4 Threads: 1000000000 | Tempo: 0.000342 s
+Em 4 Threads: 1000000000 | Tempo: 0.000378 s
+Em 4 Threads: 1000000000 | Tempo: 0.000397 s
+Em 4 Threads: 1000000000 | Tempo: 0.000377 s
+Em 4 Threads: 1000000000 | Tempo: 0.000335 s
+Em 4 Threads: 1000000000 | Tempo: 0.000367 s
+
+Em 8 Threads: 1000000000 | Tempo: 0.000594 s
+Em 8 Threads: 1000000000 | Tempo: 0.000621 s
+Em 8 Threads: 1000000000 | Tempo: 0.000593 s
+Em 8 Threads: 1000000000 | Tempo: 0.000557 s
+Em 8 Threads: 1000000000 | Tempo: 0.000669 s
+Em 8 Threads: 1000000000 | Tempo: 0.000843 s
+Em 8 Threads: 1000000000 | Tempo: 0.000583 s
+Em 8 Threads: 1000000000 | Tempo: 0.000609 s
+Em 8 Threads: 1000000000 | Tempo: 0.000623 s
+Em 8 Threads: 1000000000 | Tempo: 0.000594 s
