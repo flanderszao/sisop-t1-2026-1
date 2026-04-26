@@ -8,7 +8,7 @@ int count = 0;
 FILE *fptr;
 
 void* increase(){
-    while(count < 1000000000){
+    while(1){
         pthread_mutex_lock(&m);
 
         if (count >= 1000000000){

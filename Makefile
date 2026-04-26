@@ -1,5 +1,5 @@
 CC ?= gcc
-CFLAGS ?= -O2 -Wall -Wextra -std=c11
+CFLAGS ?=
 LDFLAGS ?=
 
 BINARIES := p1 p2 t1 t2
@@ -12,13 +12,13 @@ p1: p1.c
 	$(CC) $(CFLAGS) $< -o $@ $(LDFLAGS)
 
 p2: p2.c
-	$(CC) $(CFLAGS) $< -o $@ $(LDFLAGS) -pthread -lrt
+	$(CC) $(CFLAGS) $< -o $@ $(LDFLAGS)
 
 t1: t1.c
-	$(CC) $(CFLAGS) $< -o $@ $(LDFLAGS) -pthread
+	$(CC) $(CFLAGS) $< -o $@ $(LDFLAGS)
 
 t2: t2.c
-	$(CC) $(CFLAGS) $< -o $@ $(LDFLAGS) -pthread
+	$(CC) $(CFLAGS) $< -o $@ $(LDFLAGS)
 
 clean:
 	rm -f $(BINARIES)
