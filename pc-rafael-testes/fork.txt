@@ -46,35 +46,36 @@ Vulnerabilities:
   Srbds:                  Unknown: Dependent on hypervisor status
   Tsx async abort:        Not affected
 TESTES:
-Em 2 Forks: 1000000000 | Tempo: 2.340216 s
-Em 2 Forks: 1000000000 | Tempo: 2.488694 s
-Em 2 Forks: 1000000000 | Tempo: 2.364130 s
-Em 2 Forks: 1000000000 | Tempo: 2.471197 s
-Em 2 Forks: 1000000000 | Tempo: 2.872613 s
-Em 2 Forks: 1000000000 | Tempo: 2.652235 s
-Em 2 Forks: 1000000000 | Tempo: 2.429072 s
-Em 2 Forks: 1000000000 | Tempo: 2.300305 s
-Em 2 Forks: 1000000000 | Tempo: 2.534367 s
-Em 2 Forks: 1000000000 | Tempo: 2.328678 s
 
-Em 4 Forks: 1000000000 | Tempo: 4.024922 s
-Em 4 Forks: 1000000000 | Tempo: 3.923289 s
-Em 4 Forks: 1000000000 | Tempo: 3.781555 s
-Em 4 Forks: 1000000000 | Tempo: 3.932787 s
-Em 4 Forks: 1000000000 | Tempo: 3.842736 s
-Em 4 Forks: 1000000000 | Tempo: 3.849793 s
-Em 4 Forks: 1000000000 | Tempo: 3.802976 s
-Em 4 Forks: 1000000000 | Tempo: 3.845931 s
-Em 4 Forks: 1000000000 | Tempo: 4.239029 s
-Em 4 Forks: 1000000000 | Tempo: 4.068025 s
+Em 2 Forks: 1000000000 | Tempo: 4.289424 s
+Em 2 Forks: 1000000000 | Tempo: 3.753766 s
+Em 2 Forks: 1000000000 | Tempo: 4.350556 s
+Em 2 Forks: 1000000001 | Tempo: 3.871611 s
+Em 2 Forks: 1000000001 | Tempo: 4.187415 s
+Em 2 Forks: 1000000000 | Tempo: 3.913665 s
+Em 2 Forks: 1000000000 | Tempo: 3.541823 s
+Em 2 Forks: 1000000001 | Tempo: 3.511621 s
+Em 2 Forks: 1000000000 | Tempo: 3.435316 s
+Em 2 Forks: 1000000000 | Tempo: 4.193767 s
 
-Em 8 Forks: 1000000000 | Tempo: 8.599314 s
-Em 8 Forks: 1000000000 | Tempo: 9.079169 s
-Em 8 Forks: 1000000000 | Tempo: 7.703642 s
-Em 8 Forks: 1000000000 | Tempo: 7.271342 s
-Em 8 Forks: 1000000000 | Tempo: 7.287671 s
-Em 8 Forks: 1000000000 | Tempo: 6.920248 s
-Em 8 Forks: 1000000000 | Tempo: 7.522745 s
-Em 8 Forks: 1000000000 | Tempo: 6.888762 s
-Em 8 Forks: 1000000000 | Tempo: 5.908643 s
-Em 8 Forks: 1000000000 | Tempo: 6.044745 s
+Em 4 Forks: 1000000003 | Tempo: 4.120144 s
+Em 4 Forks: 1000000003 | Tempo: 5.117174 s
+Em 4 Forks: 1000000000 | Tempo: 5.627003 s
+Em 4 Forks: 1000000001 | Tempo: 6.022341 s
+Em 4 Forks: 1000000001 | Tempo: 5.418885 s
+Em 4 Forks: 1000000003 | Tempo: 5.174349 s
+Em 4 Forks: 1000000002 | Tempo: 5.496924 s
+Em 4 Forks: 1000000000 | Tempo: 5.842237 s
+Em 4 Forks: 1000000001 | Tempo: 4.745800 s
+Em 4 Forks: 1000000000 | Tempo: 5.509802 s
+
+Em 8 Forks: 1000000000 | Tempo: 7.618713 s
+Em 8 Forks: 1000000000 | Tempo: 7.752941 s
+Em 8 Forks: 1000000004 | Tempo: 6.843972 s
+Em 8 Forks: 1000000002 | Tempo: 7.033291 s
+Em 8 Forks: 1000000002 | Tempo: 8.472768 s
+Em 8 Forks: 1000000000 | Tempo: 7.907080 s
+Em 8 Forks: 1000000000 | Tempo: 7.745550 s
+Em 8 Forks: 1000000007 | Tempo: 7.464745 s
+Em 8 Forks: 1000000000 | Tempo: 7.648384 s
+Em 8 Forks: 1000000001 | Tempo: 7.454835 s
